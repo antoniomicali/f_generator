@@ -31,10 +31,10 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   switch (rand_num) {
     case 0:
-      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
+      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/fart_toot.ogg"></audio></speak>';
       break;
     case 1:
-      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
+      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/wet_fart.ogg"></audio></speak>';
       break;
   }
   return res.json({
