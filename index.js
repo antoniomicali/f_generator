@@ -27,7 +27,7 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
-  var rand_num = Math.floor(Math.random() * 3);
+  var rand_num = Math.floor(Math.random() * 6);
   var languageCode = req.body.queryResult.languageCode;
   var speech = "";
   if (languageCode == "it") {
@@ -41,6 +41,15 @@ restService.post("/audio", function(req, res) {
       case 2:
         speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_humidis.wav">Ecco una scoreggia</audio></speak>';
         break;
+      case 3:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_matutinis.wav">Ecco una scoreggia</audio></speak>';
+        break;
+      case 4:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_alonata.wav">Ecco una scoreggia</audio></speak>';
+        break;
+      case 5:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_deflagrante.wav">Ecco una scoreggia</audio></speak>';
+        break;
     }
   }
   if (languageCode == "en") {
@@ -53,6 +62,15 @@ restService.post("/audio", function(req, res) {
         break;
       case 2:
         speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_humidis.wav">Here is a fart</audio></speak>';
+        break;
+      case 3:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_matutinis.wav">Here is a fart</audio></speak>';
+        break;
+      case 4:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_alonata.wav">Here is a fart</audio></speak>';
+        break;
+      case 5:
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_deflagrante.wav">Here is a fart</audio></speak>';
         break;
     }
   }
