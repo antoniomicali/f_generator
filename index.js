@@ -27,15 +27,14 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
+  var rand_num = Math.floor(Math.random() * 2);
   var speech = "";
-  switch (req.body.queryResult.parameters.AudioSample.toLowerCase()) {
-    case "music one":
-      speech =
-        '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
+  switch (rand_num) {
+    case 0:
+      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
       break;
-    case "music two":
-      speech =
-        '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
+    case 1:
+      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">Sorry, I did not get the audio file</audio></speak>';
       break;
   }
   return res.json({
