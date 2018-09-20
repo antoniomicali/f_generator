@@ -28,7 +28,7 @@ restService.post("/echo", function(req, res) {
 
 restService.post("/audio", function(req, res) {
   var rand_num = Math.floor(Math.random() * 3);
-  var languageCode = req.body.queryResult.echoText;
+  var languageCode = req.body.queryResult.languageCode;
   var speech = "";
   if (languageCode == "it") {
     switch (rand_num) {
