@@ -27,7 +27,7 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
-  var rand_num = Math.floor(Math.random() * 2);
+  var rand_num = Math.floor(Math.random() * 3);
   var speech = "";
   switch (rand_num) {
     case 0:
@@ -35,6 +35,9 @@ restService.post("/audio", function(req, res) {
       break;
     case 1:
       speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/wet_fart.ogg">Ecco una scoreggia</audio></speak>';
+      break;
+    case 2:
+      speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/long_fart.ogg">Ecco una scoreggia</audio></speak>';
       break;
   }
   return res.json({
