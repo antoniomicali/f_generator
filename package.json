@@ -1,0 +1,14 @@
+{
+  "name": "f_generator",
+  "version": "1.0.0",
+  "description": "F Generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Antonio Micali",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
