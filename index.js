@@ -33,26 +33,26 @@ restService.post("/audio", function(req, res) {
   if (languageCode == "it") {
     switch (rand_num) {
       case 0:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/fart_toot.ogg">Ecco una scoreggia</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_vulgaris.wav">Ecco una scoreggia</audio></speak>';
         break;
       case 1:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/wet_fart.ogg">Ecco una scoreggia</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_salonis.wav">Ecco una scoreggia</audio></speak>';
         break;
       case 2:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/long_fart.ogg">Ecco una scoreggia</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_humidis.wav">Ecco una scoreggia</audio></speak>';
         break;
     }
   }
   if (languageCode == "en") {
     switch (rand_num) {
       case 0:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/fart_toot.ogg">Here is a fart</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_vulgaris.wav">Here is a fart</audio></speak>';
         break;
       case 1:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/wet_fart.ogg">Here is a fart</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_salonis.wav">Here is a fart</audio></speak>';
         break;
       case 2:
-        speech = '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/long_fart.ogg">Here is a fart</audio></speak>';
+        speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_humidis.wav">Here is a fart</audio></speak>';
         break;
     }
   }
