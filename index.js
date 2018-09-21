@@ -52,7 +52,7 @@ restService.post("/audio", function(req, res) {
         break;
     }
   }
-  if (languageCode == "en") {
+  else {
     switch (rand_num) {
       case 0:
         speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_vulgaris.wav">Here is a fart</audio></speak>';
