@@ -31,8 +31,7 @@ restService.post("/audio", function(req, res) {
   var languageCode = req.body.queryResult.languageCode;
   var speech = "";
   if (languageCode == "it") {
-    speech = '<speak>ciao ciao ciao. vuoi sentirlo ancora?</speak>';
-    /*switch (rand_num) {
+    switch (rand_num) {
       case 0:
         speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_vulgaris.wav">Ecco una scoreggia</audio></speak>';
         break;
@@ -51,7 +50,8 @@ restService.post("/audio", function(req, res) {
       case 5:
         speech = '<speak><audio src="https://www.magnaromagna.it/wp-content/uploads/2007/05/scoreggia_deflagrante.wav">Ecco una scoreggia</audio></speak>';
         break;
-    }*/
+    }
+    speech += '<speak>ciao ciao ciao. vuoi sentirlo ancora?</speak>';
   }
   else {
     switch (rand_num) {
